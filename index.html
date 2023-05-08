@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="stylesheet" href="./shop.css">
+</head>
+
+<body>
+
+    <header class="header main-header" id="hedaer">
+        <div class="class-top-header top-header-1">
+            <div class="container"><span>فروشگاه آریا استور. محل محصولات پیدا نشدنی</span></div>
+        </div>
+        <div class="class-top-header top-header-2">
+            <div class="container flex justify-between">
+                <div class="right column">
+                    <ul class="contact-list flex">
+                        <li>
+                            <span class="text">تماس با ما:</span>
+                            <a href="tel:02166433168">02166433168</a>
+                            <a href="tel:09010612151">09010612151</a>
+                        </li>
+                        <li>
+                            <span class="icon"><i aria-hidden="true" class="far fa-hand-peace"></i></span>
+                            <span class="text">گارانتی تعویض در صورت بروز مشکل</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="left column">
+                    <ul class="pages-list flex">
+                        <li><a href="https://arya-stores.com/%d8%af%d8%b1%d8%a8%d8%a7%d8%b1%d9%87-%d9%85%d8%a7/" class="link">درباره ما</a></li>
+                        <li><a href="https://arya-stores.com/my-account" class="link">حساب کاربری</a></li>
+                        <li><a href="https://arya-stores.com/wishlist/6365F4/" class="link">علاقه مندی ها</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-header">
+            <div class="container flex wrap align-center">
+                <div class="logo">
+                    <a href="/"><img src="https://arya-stores.com/wp-content/uploads/2022/07/cropped-Arya-stores.webp" alt=""></a>
+                </div>
+
+                <div class="search">
+                    <form action="/" class="search-form">
+                        <div class="input-box">
+                            <input placeholder="جستجو..." class="search-input" type="search" name="s" title="Search" value="">
+                            <button class="icon search-submit"><i class="fas fa-search"></i></button>
+                            <div class="result-box"></div>
+                        </div>
+                        <input type="hidden" name="post-type" value="product">
+                    </form>
+                </div>
+
+                <div class="login">
+                    <a href="/my-account"><i class="fas fa-sign-in"></i> <span class="text">ورود/ثبت نام</span></a>
+                </div>
+
+                <div class="cart">
+                    <a href="javascript:void()" class="cart-box">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div class="total">2</div>
+                    </a>
+                    <div class="cart-items d-none"></div>
+                </div>
+
+                <div class="menu-section flex justify-between align-center">
+                    <nav class="right nav-menu">
+                        <div class="toggle"><i class="fas fa-bars"></i></div>
+                        <ul id="menu" class="menu flex">
+                            <li class="menu-item close">
+                                <i class="fas fa-close"></i>
+                            </li>
+                            <li class="menu-item first-item">
+                                <a href="#">
+                                    <i class="fas fa-bars"></i> دسته بندی کالا ها
+                                </a>
+                                <div class="mega-menu-box">
+                                    <ul class="menu-menu">
+                                        <li class="mega-menu-item">
+                                            <a href="#">
+                                                <i class="fa fa-coffee"></i> مورد اول
+                                            </a>
+                                            <div class="menucontent">
+                                                <ul class="items flex">
+                                                    <li>
+                                                        <a href="#" class="title">خانه و آشپز خانه</a>
+                                                        <ul>
+                                                            <li><a href="#">گرین</a></li>
+                                                            <li><a href="#">من</a></li>
+                                                            <li><a href="#">تو</a></li>
+                                                            <li><a href="#">او</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="title">چاقو و تیزی</a>
+                                                        <ul>
+                                                            <li><a href="#">گرین</a></li>
+                                                            <li><a href="#">گرین</a></li>
+                                                            <li><a href="#">گرین</a></li>
+                                                            <li><a href="#">گرین</a></li>
+                                                            <li><a href="#">من</a></li>
+                                                            <li><a href="#">تو</a></li>
+
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="title">قنادی</a>
+                                                        <ul>
+                                                            <li><a href="#">گرین</a></li>
+                                                            <li><a href="#">گرین</a></li>
+                                                            <li><a href="#">گرین</a></li>
+                                                            <li><a href="#">گرین</a></li>
+                                                            <li><a href="#">او</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a href="#">
+                                                <i class="fa fa-cake"></i> مورد دوم
+                                            </a>
+                                            <div class="menucontent">
+                                                <a href="#" class="link-bold">مشاهده 2</a>
+                                                <a href="#" class="link">خانه و آشپزخانه</a>
+                                                <a href="#" class="link">خانه و آشپزخانه</a>
+                                                <a href="#" class="link">خانه و آشپزخانه</a>
+                                                <a href="#" class="link">خانه و آشپزخانه</a>
+                                                <a href="#" class="link-bold">چاقو 2</a>
+                                                <a href="#" class="link">خانه و آشپزخانه</a>
+                                                <a href="#" class="link">خانه و آشپزخانه</a>
+                                                <a href="#" class="link">خانه و آشپزخانه</a>
+                                                <a href="#" class="link-bold">قنادی 2</a>
+                                            </div>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a href="#">
+                                                <i class="fa fa-shirt"></i> مورد سوم
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a href="#">
+                                                <i class="fa fa-car"></i> مورد چهارم
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a href="#">
+                                                <i class="fa fa-magic"></i> مورد پنجک
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a href="#">
+                                                <i class="fa fa-dog"></i> مورد پنجک
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a href="#">
+                                                <i class="fa fa-mobile"></i> مورد پنجک
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a href="#">
+                                                <i class="fa fa-baby"></i> مورد پنجک
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a href="#">
+                                                <i class="fa fa-wrench"></i> مورد پنجک
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a href="#">
+                                                <i class="fa fa-running"></i> مورد پنجک
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a href="#">
+                                                <i class="fa fa-paint-brush"></i> مورد پنجک
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a href="#">
+                                                <i class="fa fa-headphones"></i> مورد پنجک
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a href="#">
+                                                <i class="fa fa-book"></i> مورد پنجک
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <a href="https://arya-stores.com/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/">
+                                    <i class="fa fa-newspaper"></i> مقالات
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="https://arya-stores.com/%d9%be%d8%b1%d9%81%d8%b1%d9%88%d8%b4-%d8%aa%d8%b1%db%8c%d9%86-%d9%87%d8%a7/">
+                                    <i class="fa fa-fire"></i> پرفروش ترین ها
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="https://arya-stores.com/%d8%aa%d8%ae%d9%81%db%8c%d9%81-%d9%87%d8%a7/">
+                                    <i class="fa fa-percentage"></i> تخفیف ها
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="https://arya-stores.com/%d8%ae%d8%af%d9%85%d8%a7%d8%aa/">
+                                    <i class="fa fa-wrench"></i> خدمات
+                                </a>
+                            </li>
+                            <li class="menu-item"><a href="https://arya-stores.com/%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/">خرید عمده</a></li>
+                            <li class="menu-item"><a href="https://arya-stores.com/%d8%a2%d9%85%d9%88%d8%b2%d8%b4-%d8%ae%d8%b1%db%8c%d8%af/">آموزش خرید</a></li>
+                        </ul>
+                    </nav>
+                    <div class="left">
+                        <a class="button" href="https://arya-stores.com/product-category/%d9%be%db%8c%d8%b4%d9%86%d9%87%d8%a7%d8%af-%d8%a2%d8%b1%db%8c%d8%a7-%d8%a7%d8%b3%d8%aa%d9%88%d8%b1%d8%b2/"><i
+                                class="fas fa-magic"></i> پیشنهاد شگفت انگیز</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="container">
+        <div class="product-info flex">
+            <div class="product-gallery">
+                <div class="image-slider">
+                    <div style="--swiper-navigation-color: #006eff; --swiper-navigation-size: 20px" class="swiper product-image-slider-2" dir="rtl">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/160704769940ed83b12bbc6d4726211110f66e9ead_thumbnail_750x (1).webp" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/160704769940ed83b12bbc6d4726211110f66e9ead_thumbnail_750x.webp" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/160704770118221a5398afd0cdccfd6755908f33e8_thumbnail_750x.webp" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/1607047704456448a1420ca786b7e1eaea4c5a66fd_thumbnail_750x.webp" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/16070477065ed0a88d98ec1eca7a856fb2573871a0_thumbnail_750x.webp" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/16070477065ed0a88d98ec1eca7a856fb2573871a0_thumbnail_750x.webp" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/160704770914e8dd31100fd867eafa5770afe5e8cb_thumbnail_750x.webp" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/162614819535ff6641f6f25da0cf367844929b8ca6_thumbnail_750x.webp" />
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper product-image-slider" dir="rtl">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/160704769940ed83b12bbc6d4726211110f66e9ead_thumbnail_750x (1).webp" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/160704769940ed83b12bbc6d4726211110f66e9ead_thumbnail_750x.webp" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/160704770118221a5398afd0cdccfd6755908f33e8_thumbnail_750x.webp" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/1607047704456448a1420ca786b7e1eaea4c5a66fd_thumbnail_750x.webp" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/16070477065ed0a88d98ec1eca7a856fb2573871a0_thumbnail_750x.webp" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/16070477065ed0a88d98ec1eca7a856fb2573871a0_thumbnail_750x.webp" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/160704770914e8dd31100fd867eafa5770afe5e8cb_thumbnail_750x.webp" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/162614819535ff6641f6f25da0cf367844929b8ca6_thumbnail_750x.webp" />
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="shop-info">
+                <h1 class="product-title">چاقو آشپزخانه استیل زد زنگ</h1>
+                <div class="product-meta">
+                    <div class="price">
+                        <span class="sale-price">
+                            <span class="total">200000</span>
+                        <span class="sign">تومان</span>
+                        </span>
+                        <span class="regular-price">
+                            <span class="total">-250000</span>
+                        <span class="sign">تومان</span>
+                        </span>
+                        <span class="percentage">
+                            -11%
+                        </span>
+                    </div>
+                    <div class="star-rating">
+                        <div class="star"><div class="fa fa-star"></div></div>
+                        <div class="rate">4.5</div>
+                    </div>
+                </div>
+
+                <a class="paidvip__content">
+                    <div class="paidvip__info">
+                        <div>تومان 7.59</div>
+                        <div class="paidvip__line"></div> <img src="./images/pay_vip_member_name-2037e918b0.png" alt="shein club logo"></div>
+                    <div class="paidvip__tip">
+                        مشاهده همه محصولات تخفیف دار
+                    </div>
+                    <div class="paidvip__icon"><i class="fa fa-angle-left"></i></div>
+                </a>
+
+                <div class="product-variable">
+                    <div class="var-item image">
+                        <div class="variable-title">انتخاب رنگ</div>
+                        <div class="variations">
+                            <a href="#"><img src="./images/160704769940ed83b12bbc6d4726211110f66e9ead_thumbnail_750x.webp" alt=""></a>
+                            <a href="#" class="out-of-stock"><img src="./images/162614819535ff6641f6f25da0cf367844929b8ca6_thumbnail_750x.webp" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="var-item list">
+                        <div class="variable-title">انتخاب سایز</div>
+                        <div class="varitions">
+                            <a href="#">xl</a>
+                            <a href="#" class="out-of-stock">sm</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add-to-cart">
+                    <button>افزودن به سبد خرید</button>
+                    <div class="quantity">
+                        <span class="plus"><i class="fa fa-plus"></i></span>
+                        <div class="input"><input type="number" value="1"></div>
+                        <span class="minus"><i class="fa fa-minus"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="delivery">
+                <div class="delivery-method deliveries-way">
+                    <div class="delivery-title">حمل و نقل</div>
+                    <div class="delivery-box">
+                        <div class="delivery-item">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        </div>
+                        <div class="delivery-item">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        </div>
+                        <div class="delivery-item">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        </div>
+                    </div>
+                    <div class="free-delivery">ارسال محصول برای خرید های بالای 100 هزار تومان رایگان می باشد</div>
+                </div>
+                <div class="delivery-method payment-back">
+                    <div class="delivery-title">بازگشت وجه</div>
+                    <div class="payment-back">مشاهده شرایط و قوانین بازگشت وجه</div>
+                    <div class="payment-back-content">
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و </p>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و </p>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و </p>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-information">
+            <div class="description product-box">
+                <div class="title-box">
+                    <h3 class="title">توضیحات چاقو آشپزخانه</h3>
+                    <a href="#" class="more-info">مشاهده همه توضیحات</a>
+                </div>
+                <div class="content-box">
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                        ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
+                        کرد، در این صورت می توان امید داشت که تمام </p>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                        ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
+                        کرد، در این صورت می توان امید داشت که تمام </p>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                        ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
+                        کرد، در این صورت می توان امید داشت که تمام </p>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                        ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
+                        کرد، در این صورت می توان امید داشت که تمام </p>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                        ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
+                        کرد، در این صورت می توان امید داشت که تمام </p>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                        ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
+                        کرد، در این صورت می توان امید داشت که تمام </p>
+                </div>
+            </div>
+
+            <div class="attributes product-box">
+                <div class="title-box">
+                    <h3 class="title">مشخصات محصول</h3>
+                    <a href="#" class="more-info">مشاهده همه مشخصات</a>
+                </div>
+                <div class="content-box">
+                    <table class="product-attributes-list">
+                        <tr>
+                            <th>وزن</th>
+                            <td>24km</td>
+                        </tr>
+                        <tr>
+                            <th>جنس بدنه</th>
+                            <td>استیل زد زنگ</td>
+                        </tr>
+                        <tr>
+                            <th>جنس دسته</th>
+                            <td>چوب راش</td>
+                        </tr>
+                        <tr>
+                            <th>اندازه</th>
+                            <td>30cmx5cm</td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="#" class="more-info">مشاهده همه مشخصات</a>
+            </div>
+
+
+            <div class="reviews product-box">
+                <div class="title-box">
+                    <h3 class="title">نظرات محصول</h3>
+                    <a href="#" class="more-info">مشاهده همه نظرات</a>
+                    <div class="reviews-info">
+                        <ul>
+                            <li data-percent="12%">1 ستاره <span class="total">12 نفر</span><span class="percent">12%</span></li>
+                            <li data-percent="15%">2 ستاره <span class="total">12 نفر</span><span class="percent">12%</span></li>
+                            <li data-percent="50%">3 ستاره <span class="total">12 نفر</span><span class="percent">12%</span></li>
+                            <li data-percent="12%">4 ستاره <span class="total">12 نفر</span><span class="percent">12%</span></li>
+                            <li data-percent="12%">5 ستاره <span class="total">12 نفر</span><span class="percent">12%</span></li>
+                        </ul>
+                        <div class="review-option">
+                            <a href="#" class="see-all">مشاهده همه نظرات</a>
+                            <a href="#" class="add-review">افزودن نظر</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-content">
+                    <div class="close"><i class="fa fa-close"></i></div>
+                    <div class="comments">
+                        <div class="comment">
+                            <div class="review-meta">
+                                <div>
+                                    <p class="name">محمد یزدانی</p>
+                                    <time>1401-12-12 13:13</time>
+                                </div>
+                                <div class="star"><i class="fa fa-star"></i> 4</div>
+                            </div>
+                            <div class="comment-content">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و </p>
+                            </div>
+                            <div class="images">
+                                <img src="./images/160704769940ed83b12bbc6d4726211110f66e9ead_thumbnail_750x.webp" alt="">
+                                <img src="./images/162614819535ff6641f6f25da0cf367844929b8ca6_thumbnail_750x.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="review-meta">
+                                <div>
+                                    <p class="name">محمد یزدانی</p>
+                                    <time>1401-12-12 13:13</time>
+                                </div>
+                                <div class="star"><i class="fa fa-star"></i> 4</div>
+                            </div>
+                            <div class="comment-content">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و </p>
+                            </div>
+                            <div class="images">
+                                <img src="./images/160704769940ed83b12bbc6d4726211110f66e9ead_thumbnail_750x.webp" alt="">
+                                <img src="./images/162614819535ff6641f6f25da0cf367844929b8ca6_thumbnail_750x.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="review-meta">
+                                <div>
+                                    <p class="name">محمد یزدانی</p>
+                                    <time>1401-12-12 13:13</time>
+                                </div>
+                                <div class="star"><i class="fa fa-star"></i> 4</div>
+                            </div>
+                            <div class="comment-content">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و </p>
+                            </div>
+                            <div class="images">
+                                <img src="./images/160704769940ed83b12bbc6d4726211110f66e9ead_thumbnail_750x.webp" alt="">
+                                <img src="./images/162614819535ff6641f6f25da0cf367844929b8ca6_thumbnail_750x.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="review-meta">
+                                <div>
+                                    <p class="name">محمد یزدانی</p>
+                                    <time>1401-12-12 13:13</time>
+                                </div>
+                                <div class="star"><i class="fa fa-star"></i> 4</div>
+                            </div>
+                            <div class="comment-content">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و </p>
+                            </div>
+                            <div class="images">
+                                <img src="./images/160704769940ed83b12bbc6d4726211110f66e9ead_thumbnail_750x.webp" alt="">
+                                <img src="./images/162614819535ff6641f6f25da0cf367844929b8ca6_thumbnail_750x.webp" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="swiper reviews-slider" dir="rtl">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="review-meta">
+                                    <div>
+                                        <p class="name">محمد یزدانی</p>
+                                        <time>1401-12-12 13:13</time>
+                                    </div>
+                                    <div class="star"><i class="fa fa-star"></i> 4</div>
+                                </div>
+                                <div class="comment-content">
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و </p>
+                                </div>
+                                <div class="images">
+                                    <img src="./images/160704769940ed83b12bbc6d4726211110f66e9ead_thumbnail_750x.webp" alt="">
+                                    <img src="./images/162614819535ff6641f6f25da0cf367844929b8ca6_thumbnail_750x.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-meta">
+                                    <div>
+                                        <p class="name">محمد یزدانی</p>
+                                        <time>1401-12-12 13:13</time>
+                                    </div>
+                                    <div class="star"><i class="fa fa-star"></i> 4</div>
+                                </div>
+                                <div class="comment-content">
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و </p>
+                                </div>
+                                <div class="images">
+                                    <img src="./images/160704769940ed83b12bbc6d4726211110f66e9ead_thumbnail_750x.webp" alt="">
+                                    <img src="./images/162614819535ff6641f6f25da0cf367844929b8ca6_thumbnail_750x.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-meta">
+                                    <div>
+                                        <p class="name">محمد یزدانی</p>
+                                        <time>1401-12-12 13:13</time>
+                                    </div>
+                                    <div class="star"><i class="fa fa-star"></i> 4</div>
+                                </div>
+                                <div class="comment-content">
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و </p>
+                                </div>
+                                <div class="images">
+                                    <img src="./images/160704769940ed83b12bbc6d4726211110f66e9ead_thumbnail_750x.webp" alt="">
+                                    <img src="./images/162614819535ff6641f6f25da0cf367844929b8ca6_thumbnail_750x.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-meta">
+                                    <div>
+                                        <p class="name">محمد یزدانی</p>
+                                        <time>1401-12-12 13:13</time>
+                                    </div>
+                                    <div class="star"><i class="fa fa-star"></i> 4</div>
+                                </div>
+                                <div class="comment-content">
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و </p>
+                                </div>
+                                <div class="images">
+                                    <img src="./images/160704769940ed83b12bbc6d4726211110f66e9ead_thumbnail_750x.webp" alt="">
+                                    <img src="./images/162614819535ff6641f6f25da0cf367844929b8ca6_thumbnail_750x.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <a href="#" class="more-info">مشاهده همه مشخصات</a>
+            </div>
+
+
+
+
+        </div>
+    </main>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
