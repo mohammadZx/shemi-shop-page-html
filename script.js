@@ -34,6 +34,24 @@ jQuery(function($){
             console.log(this)
             }
         })
+
+        $('.delivery-method .tab-title').on('click', function(){
+          $(this).parent().find('.delivery-panel').slideToggle()
+        })
+
+
+          $('.description.product-box .content-box').btnLoadmore({
+              showItem :1,
+              whenClickBtn : 1,
+              textBtn : 'مشاهده ادامه توضیحات <i class="fa fa-angle-left"></i>'
+          });
+
+          $('.attributes.product-box .content-box table tbody').btnLoadmore({
+            showItem :5,
+            whenClickBtn : 1
+        });
+  
+
         
     }
     
@@ -48,9 +66,13 @@ var swiper = new Swiper(".product-image-slider", {
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
+    breakpoints:{
+      
+    }
   });
   var swiper2 = new Swiper(".product-image-slider-2 ", {
     spaceBetween: 10,
+    slidesPerView: 1.3,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -58,17 +80,30 @@ var swiper = new Swiper(".product-image-slider", {
     thumbs: {
       swiper: swiper,
     },
+
+    breakpoints:{
+      765:{
+        spaceBetween: 0,
+      slidesPerView: 1,
+      }
+    }
   });
 
 
   var swiper = new Swiper(".reviews-slider", {
-    slidesPerView: 2.5,
+    slidesPerView: 1.5,
     spaceBetween: 30,
    loop: true,
    navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints:{
+    765:{
+      spaceBetween: 30,
+      slidesPerView: 2.5,
+      }
+  }
   });
 
   
